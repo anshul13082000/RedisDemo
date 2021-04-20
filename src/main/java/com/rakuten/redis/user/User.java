@@ -13,7 +13,7 @@ public class User implements Serializable{
 	
 	private String name;
 	
-	private int mob_number;
+	private String mob_number;
 	
 	private String email;
 
@@ -33,11 +33,11 @@ public class User implements Serializable{
 		this.name = name;
 	}
 
-	public int getMob_number() {
+	public String getMob_number() {
 		return mob_number;
 	}
 
-	public void setMob_number(int mob_number) {
+	public void setMob_number(String mob_number) {
 		this.mob_number = mob_number;
 	}
 
@@ -49,7 +49,7 @@ public class User implements Serializable{
 		this.email = email;
 	}
 
-	public User(int user_id, String name, int mob_number, String email) {
+	public User(int user_id, String name, String mob_number, String email) {
 		super();
 		this.user_id = user_id;
 		this.name = name;
